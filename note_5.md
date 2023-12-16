@@ -9,3 +9,8 @@ C4:806GB
 
 The Pile:825GB较小高质量数据集
 
+# 分词
+1. 空格分词
+2. Byte pair encoding(BPE):合并频率最高的元素对
+3. Byte-level BPE(BBPE):抵抗unicode稀疏
+4. unigram moel:目标函数不是出现频率，使用似然度：分词出现概率之积。计算loss(x)，筛选出似然度loss大的数据。
